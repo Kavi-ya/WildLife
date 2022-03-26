@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <title>WildLife Photography</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Main1.jpg">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="#" class="logo">WildLife</a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="index.html" style="--i:1;">Home</a></li>
+				<li><a href="https://kavi-ya.github.io/open-uom-assignment/" style="--i:2;">Gallery</a></li>
+				<li><a href="#" style="--i:3;">About</a></li>
+				<li><a href="https://wa.me/+94703638365" target="_blank" style="--i:4;">Contact</a></li>
+				<li><a href="#" style="--i:5;">More</a></li>
+			</ul>
+		</header>
+		<div class="container">
+			<div class="box" style="--i:3;">
+				<div class="imgBx">
+					<img src="img1.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBx">
+					<img src="img2.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:5;">
+				<div class="imgBx">
+					<img src="img3.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:6;">
+				<div class="imgBx">
+					<img src="img4.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<ul class="sci">
+                                <li><a href="https://wa.me/+94703638365" target="_blank" style="--i:9">Whatsapp</a></li>
+				<li><a href="https://www.facebook.com/manjulauggalla1" target="_blank" style="--i:9">Facebook</a></li>
+				<li><a href="#" target="_blank" style="--i:8">Twitter</a></li>
+				<li><a href="https://www.instagram.com/janith_deshan11/" target="_blank" style="--i:7">Instagram</a></li>
+			</ul>
+			<p class="copyrightText">©JD Creations - 2022</p>
+		</div>
+	</section>
+	<script>
+		let imgBx = document.querySelectorAll('.imgBx');
+		imgBx.forEach(popup => popup.addEventListener('click', () =>{
+			popup.classList.toggle('active')
+		}))
+
+		function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var navigation = document.querySelector('.navigation');
+	      menuToggle.classList.toggle('active');
+	      navigation.classList.toggle('active');
+	    }
+	</script>
+</body>
+</html>
+
